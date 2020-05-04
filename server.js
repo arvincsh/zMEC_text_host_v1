@@ -31,6 +31,7 @@ app.post("/image",function (req,res) {
                 returnData = child_process.execSync('python3 Identification.py '+ __dirname+"/page/upload/"+avatarName);
                 //console.log(""+returnData);
                 res.send(""+returnData);
+        fs.unlinkSync(__dirname+"/page/upload/"+avatarName);
         })
 
 })
