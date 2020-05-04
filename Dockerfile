@@ -17,12 +17,12 @@ RUN apt install -y nodejs
 
 RUN npm install http-server -g
 
-RUN git clone https://github.com/HUSTer2013/recognition.git
+RUN git clone https://github.com/arvincsh/zMEC_text_host_v1.git
 
-WORKDIR /home/work/recognition
+WORKDIR /home/work/zMEC_text_host_v1
 
 RUN npm install express && npm install formidable
 
 RUN mkdir page && cd page && mkdir upload && cd ..
 
-CMD [ "node", "/home/work/recognition/server.js" ]
+CMD [ "node", "/home/work/zMEC_text_host_v1/server.js" ]
