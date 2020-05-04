@@ -8,8 +8,8 @@ const child_process = require('child_process');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/page"));
-app.listen("7000",function () {
-    console.log("7000端�~O��~\~M�~J��~P��~J���~Z")
+app.listen("4001",function () {
+    console.log("4001端�~O��~\~M�~J��~P��~J���~Z")
 });
 //�~K��~H�请��~B
 app.post("/image",function (req,res) {
